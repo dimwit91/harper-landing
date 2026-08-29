@@ -1570,45 +1570,6 @@ html.is-film .stage-index {
 
 
 
-.film-feature {
-  width: min(var(--wrap), 100% - var(--gutter) * 2);
-  margin: 0 auto 2.2rem;
-}
-.film-feature video,
-.film-grid video {
-  width: 100%;
-  border-radius: 1rem;
-  background: #14110e;
-}
-.film-feature figcaption {
-  margin: 0.7rem 0 0;
-  color: var(--text-3);
-  font-size: 0.95rem;
-}
-.film-grid {
-  list-style: none;
-  width: min(var(--wrap), 100% - var(--gutter) * 2);
-  margin: 0 auto;
-  padding: 0;
-  display: grid;
-  gap: 1.4rem;
-}
-.film-grid h3 {
-  margin: 0.7rem 0 0.2rem;
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: -0.03em;
-}
-.film-grid p {
-  margin: 0;
-  color: var(--text-2);
-  font-size: 0.98rem;
-}
-@media (min-width: 860px) {
-  .film-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 
 /* Reviews */
 .review-clip {
