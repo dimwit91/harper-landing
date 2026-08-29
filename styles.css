@@ -387,6 +387,68 @@ a:hover {
   margin: 0 auto 2rem;
 }
 
+.hero-stars {
+  margin: 0 0 0.85rem;
+  color: var(--champagne);
+  letter-spacing: 0.22em;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+.hero-review {
+  margin: -1.1rem auto 1.7rem;
+  max-width: 34rem;
+  color: var(--text-3);
+  font-size: 0.98rem;
+  letter-spacing: -0.015em;
+  line-height: 1.4;
+}
+.hero-review a {
+  color: var(--text-2);
+}
+.hero-review a:hover {
+  color: #fff;
+}
+.steps-list {
+  list-style: none;
+  width: min(var(--wrap), 100% - var(--gutter) * 2);
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  gap: 1.6rem;
+}
+.steps-list li {
+  padding: 1.6rem 1.5rem 1.7rem;
+  border: 1px solid var(--line);
+  border-radius: 1.1rem;
+  background: var(--bg-soft);
+}
+.step-num {
+  margin: 0 0 0.85rem;
+  color: var(--champagne);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+.steps-list h3 {
+  margin: 0 0 0.45rem;
+  font-size: clamp(1.25rem, 1.05rem + 0.9vw, 1.8rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+.steps-list p:not(.step-num) {
+  margin: 0;
+  color: var(--text-2);
+  max-width: 34rem;
+}
+@media (min-width: 860px) {
+  .steps-list {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.4rem;
+  }
+}
+
+
+
 @supports (animation-timeline: view()) {
   html.is-film .hero-mark {
     animation: mark-drift linear both;
