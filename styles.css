@@ -1267,7 +1267,7 @@ html.is-film .stage-index {
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
-  max-height: min(100svh - 5.5rem, 56.25vw);
+  max-height: none;
   object-fit: contain;
   display: block;
   margin-inline: auto;
