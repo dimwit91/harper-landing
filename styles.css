@@ -538,32 +538,104 @@ html.is-film .stage-index {
 }
 
 @media (max-width: 959px) {
+  .stage-sticky {
+    padding: 1.2rem var(--gutter) 2rem;
+  }
+
+  .stage-scene {
+    grid-template-rows: auto 1fr;
+    gap: 0.85rem;
+    margin-bottom: 3rem;
+  }
+
+  .scene-copy h2 {
+    max-width: none;
+    font-size: clamp(1.55rem, 7vw, 2.1rem);
+  }
+
+  .phone {
+    width: min(24rem, 94vw);
+  }
+
+  .phone-glass {
+    font-size: 0.9rem;
+  }
+
   html.is-film .stage-sticky {
-    padding: 3.5rem var(--gutter) 1.4rem;
+    top: 0;
+    height: 100svh;
+    height: 100dvh;
+    padding: calc(var(--header) + 0.25rem) 0.7rem 0.45rem;
+    overflow: hidden;
   }
 
   html.is-film .stage-scene {
-    inset: 3.5rem var(--gutter) 1.4rem;
-    gap: 0.85rem;
-    align-content: start;
+    inset: calc(var(--header) + 0.2rem) 0.7rem 0.4rem;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: 0.55rem;
+    align-content: stretch;
+    width: auto;
+    max-width: none;
+  }
+
+  html.is-film .scene-copy .eyebrow {
+    margin-bottom: 0.25rem;
+    font-size: 0.62rem;
   }
 
   html.is-film .scene-copy h2 {
-    font-size: clamp(1.7rem, 7.2vw, 2.45rem);
-    margin-bottom: 0.45rem;
+    font-size: clamp(1.35rem, 6.4vw, 1.85rem);
+    margin-bottom: 0.25rem;
+    max-width: none;
   }
 
   html.is-film .scene-copy p:not(.eyebrow) {
-    font-size: 0.92rem;
-    line-height: 1.4;
+    font-size: 0.86rem;
+    line-height: 1.35;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
 
+  html.is-film .scene-device {
+    min-height: 0;
+    height: 100%;
+    align-items: stretch;
+    justify-content: center;
+  }
+
   html.is-film .phone {
-    width: min(16.2rem, 68vw);
+    width: min(26rem, 96vw);
+    height: 100%;
+    max-height: 100%;
+    filter: drop-shadow(0 18px 32px rgba(0, 0, 0, 0.5));
+  }
+
+  html.is-film .phone-frame {
+    height: 100%;
+    display: flex;
+    padding: 0.28rem;
+    border-radius: 2.1rem;
+  }
+
+  html.is-film .phone-glass {
+    aspect-ratio: auto;
+    flex: 1;
+    height: 100%;
+    min-height: 0;
+    border-radius: 1.85rem;
+    font-size: 0.98rem;
+    line-height: 1.32;
+  }
+
+  html.is-film .app-nav strong {
+    font-size: 0.95rem;
+  }
+
+  html.is-film .bubble {
+    font-size: 0.95rem;
   }
 }
 
@@ -1288,6 +1360,42 @@ html.is-film .stage-index {
 @media (min-width: 860px) {
   .watch-stage video {
     max-height: min(100svh - 6rem, 42rem);
+  }
+}
+
+@media (max-width: 859px) {
+  .watch {
+    min-height: 100svh;
+    min-height: 100dvh;
+  }
+
+  .watch-stage {
+    min-height: 100svh;
+    min-height: 100dvh;
+    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .watch-overlay {
+    flex: 0 0 auto;
+    padding: calc(var(--header) + 0.45rem) var(--gutter) 0.7rem;
+    align-items: flex-end;
+  }
+
+  .watch-copy h2 {
+    font-size: 1.35rem;
+  }
+
+  .watch-stage video {
+    flex: 1 1 auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    aspect-ratio: auto;
+    max-height: none;
+    object-fit: cover;
+    object-position: 82% 50%;
   }
 }
 
