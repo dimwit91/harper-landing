@@ -1506,6 +1506,63 @@ html.is-film .stage-index {
   }
 }
 
+
+/* Reviews */
+.review-feature {
+  width: min(42rem, 100% - var(--gutter) * 2);
+  margin: 0 auto 3.2rem;
+}
+.review-feature blockquote {
+  margin: 0.4rem 0 0.9rem;
+}
+.review-feature blockquote p {
+  margin: 0 0 0.45rem;
+  font-size: clamp(1.45rem, 1.1rem + 1.4vw, 2.15rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.2;
+}
+.review-feature figcaption,
+.review-grid .who {
+  margin: 0;
+  color: var(--text-3);
+  font-size: 0.92rem;
+}
+.stars {
+  margin: 0 0 0.55rem;
+  color: var(--champagne);
+  letter-spacing: 0.18em;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+.review-grid {
+  list-style: none;
+  width: min(var(--wrap), 100% - var(--gutter) * 2);
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  gap: 1.4rem;
+}
+.review-grid li {
+  padding: 1.35rem 1.4rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: var(--bg-soft);
+}
+.review-grid blockquote {
+  margin: 0 0 0.85rem;
+  color: var(--text);
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  line-height: 1.4;
+}
+@media (min-width: 860px) {
+  .review-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.6rem;
+  }
+}
+
 /* FAQ */
 
 .faq-grid {
