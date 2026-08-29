@@ -2,6 +2,8 @@
 
 Static storefront for the Harper Grok Bot template. No build step. Open the files.
 
+Apple-style product page: near-black canvas, system sans, a pinned scroll film of eight device screens, then a full-bleed promo.
+
 ## Open locally
 
 From this folder:
@@ -10,22 +12,23 @@ From this folder:
 # Fastest: open the file
 open index.html
 
-# Or serve it (relative OG image and fonts resolve cleanly)
+# Or serve it (relative OG image, video, and fonts resolve cleanly)
 python3 -m http.server 4173
 ```
 
 Then visit `http://localhost:4173`.
 
-`styles.css`, `script.js`, `favicon.svg`, and `og.png` are all relative. The page is readable if webfonts fail; system Palatino / Georgia / Segoe UI take over.
+`styles.css`, `script.js`, `favicon.svg`, `og.png`, and `harper-promo.mp4` are all relative. Inter loads from Google Fonts as a fallback; `-apple-system` / SF Pro / Helvetica Neue take priority.
 
 ## Files
 
 | File | Role |
 |---|---|
-| `index.html` | Single page. Semantic sections, Open Graph, skip link. |
-| `styles.css` | Editorial layout. Dark warm paper, ink, copper. Mobile-first. |
-| `script.js` | Optional. Closes the mobile nav after a tap, and on Escape. |
-| `favicon.svg` | Wordmark mark. |
+| `index.html` | Single page. Hero, sticky 8-scene stage, watch, how, customize, FAQ, CTA. |
+| `styles.css` | Near-black product layout. Sticky film when `html.is-film`. Static stack without JS or with reduced motion. |
+| `script.js` | Scroll scrubber, glass header, magnetic CTA, promo autoplay, nav. |
+| `harper-promo.mp4` | Cinematic watch section. Recuts can replace this file in place. |
+| `favicon.svg` | Mark. |
 | `og.png` | 1200×630 share image. |
 
 ## Before you publish
