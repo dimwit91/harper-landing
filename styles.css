@@ -1508,6 +1508,12 @@ html.is-film .stage-index {
 
 
 /* Reviews */
+.review-clip {
+  width: 100%;
+  margin-top: 1.4rem;
+  border-radius: 1rem;
+  background: #111;
+}
 .review-feature {
   width: min(42rem, 100% - var(--gutter) * 2);
   margin: 0 auto 3.2rem;
