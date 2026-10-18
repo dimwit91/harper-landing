@@ -24,7 +24,7 @@ Then visit `http://localhost:4173`.
 
 | File | Role |
 |---|---|
-| `index.html` | Single page. Hero, sticky 8-scene stage, watch, how, customize, FAQ, CTA. |
+| `index.html` | Single page. Hero, sticky 8-scene stage, watch, how, her day, wins, customize, FAQ, CTA. |
 | `styles.css` | Near-black product layout. Sticky film when `html.is-film`. Static stack without JS or with reduced motion. |
 | `script.js` | Scroll scrubber, glass header, magnetic CTA, promo autoplay, nav. |
 | `harper-promo.mp4` | Cinematic watch section. Recuts can replace this file in place. |
@@ -34,9 +34,9 @@ Then visit `http://localhost:4173`.
 ## Before you publish
 
 1. Set a real canonical URL in `index.html` (`<link rel="canonical">` and `og:url`).
-2. Point every **Add Harper** button from `#get-harper` to the live Grok Bot template URL.
+2. Every **Get Harper free** button points to the live template: https://x.ai/bot/A6er8L662aOk-vYUrRY9_ (`HARPER_TEMPLATE_URL` in `script.js` and the `href`s in `index.html`).
 3. Host `og.png` on the same origin as the page so crawlers can fetch it.
-4. Do not add prices, testimonials, logos, or metrics. Copy lives in `../landing-copy.md`.
+4. Do not add prices, invented testimonials, logos, or made-up metrics. Wins must be real and sourced, with names and amounts left out. Copy lives in `../landing-copy.md`.
 
 ## Copy rules
 

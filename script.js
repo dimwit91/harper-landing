@@ -230,8 +230,8 @@
   frame();
 })();
 
-// Harper template link. Paste the live x.ai/bot share URL here when Harper is published.
-const HARPER_TEMPLATE_URL = "";
+// Harper template link (live).
+const HARPER_TEMPLATE_URL = "https://x.ai/bot/A6er8L662aOk-vYUrRY9_";
 (function wireHarperLink() {
   const links = document.querySelectorAll("[data-harper-link]");
   links.forEach((a) => {
@@ -240,7 +240,7 @@ const HARPER_TEMPLATE_URL = "";
       a.target = "_blank";
       a.rel = "noopener";
     } else {
-      a.textContent = "Get Harper free · coming soon";
+      a.textContent = "Get Harper free (coming soon)";
       a.href = "#get-harper";
     }
   });
