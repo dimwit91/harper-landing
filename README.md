@@ -2,7 +2,7 @@
 
 Static storefront for the Harper Grok Bot template. No build step. Open the files.
 
-Apple-style product page: near-black canvas, system sans, a pinned scroll film of eight device screens, then a full-bleed promo.
+Apple-style product page: near-black canvas, system sans, a pinned scroll film of eight device screens, then the explainer video and a full-bleed promo.
 
 ## Open locally
 
@@ -27,6 +27,7 @@ Then visit `http://localhost:4173`.
 | `index.html` | Single page. Hero, sticky 8-scene stage, watch, how, her day, wins, customize, FAQ, CTA. |
 | `styles.css` | Near-black product layout. Sticky film when `html.is-film`. Static stack without JS or with reduced motion. |
 | `script.js` | Scroll scrubber, glass header, magnetic CTA, promo autoplay, nav. |
+| `harper-explainer.mp4` | Two-minute explainer with burned-in captions, right after the hero. Poster: `harper-explainer-poster.jpg`. |
 | `harper-promo.mp4` | Cinematic watch section. Recuts can replace this file in place. |
 | `favicon.svg` | Mark. |
 | `og.png` | 1200×630 share image. |
